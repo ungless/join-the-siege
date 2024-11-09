@@ -14,6 +14,10 @@ This is a real-world challenge that allows you to demonstrate your approach to b
 ### Part 1: Enhancing the Classifier
 
 - What are the limitations in the current classifier that's stopping it from scaling?
+
+    Clasess are hard-coded by their filename. If a new client uses a different process to name files then manual intervention is required.
+    Ideally identifying a new category should be automatic.
+
 - How might you extend the classifier with additional technologies, capabilities, or features?
 
 

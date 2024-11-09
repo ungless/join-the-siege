@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  train:
+    container_name: HeronClassifierModel
+    build:
+      context: ./model
+      dockerfile: Dockerfile
+    volumes:
+      - model_storage:/app/output
+
+  api:
+    container_name: HeronAPIBackend
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - model_storage:/app/output
+
+volumes:
+  model_storage:

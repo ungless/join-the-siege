@@ -5,4 +5,4 @@ spacy
 pypdf
 pytesseract
 pillow
-ollama
+uvicorn
