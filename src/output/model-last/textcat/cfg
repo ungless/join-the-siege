@@ -1,0 +1,9 @@
+{
+  "labels":[
+    "invoice",
+    "bank_statement",
+    "drivers_licence"
+  ],
+  "threshold":0.0,
+  "positive_label":null
+}
