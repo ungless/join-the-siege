@@ -39,3 +39,9 @@ There are two kinds of document ingested: PDFs and images. Text is extracted fro
 Images are represented using Pillow and then passed to a locally-running `tesseract-ocr` service for OCR.
 
 These are then passed to the model in the shared volume and a category is predicted.
+
+# What I would do with more time
+
+I couldn't achieve perfect classification on two of the three drivers licenses. I think this was because the diversity of the outputs here wasn't captured in the synthetically-generated data. With more time I would amend the prompt generating the synthetic data and retrain.
+
+I would also integrate the synthetic data generator with documents seen passing through the service. This way, we could train on documents the system has observed and gather more data.
